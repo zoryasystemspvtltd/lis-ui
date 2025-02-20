@@ -39,13 +39,13 @@ const LeftMenu = (props) => {
                 { name: "siteSetting", text: "Site Settings", icon: "sliders", path: "/siteSettings" }
             ]
         },
-        // {
-        //     name: "configuration", text: "Configuration", icon: "cogs",
-        //     schema: [
-        //         { name: "userManagement", text: "User Management", icon: "users", path: "/users" },
-        //         { name: "roleManagement", text: "Role Management", icon: "sitemap", path: "/roles" }
-        //     ]
-        // },
+        {
+            name: "configuration", text: "Configuration", icon: "cogs",
+            schema: [
+                { name: "userManagement", text: "User Management", icon: "users", path: "/users" },
+                // { name: "roleManagement", text: "Role Management", icon: "sitemap", path: "/roles" }
+            ]
+        },
         // {
         //     name: "masterDataManagement", text: "Master Management", icon: "arrows-to-eye",
         //     schema: [
