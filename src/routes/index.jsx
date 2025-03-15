@@ -32,6 +32,7 @@ import ChangePassword from "../pages/app/ChangePassword";
 import ChangePasswordSuccess from "../pages/app/ChangePasswordSuccess";
 import { ViewProfile, EditProfile } from "../pages/app/Profile";
 import ForgotPassword from "../pages/ForgotPassword";
+import { AddModules, EditModules, ListModules, ViewModules } from "../configuration/modules";
 // import { ListInvoiceItem } from "../pages/app/schema/InvoiceItems";
 
 const Routes = () => {
@@ -402,6 +403,22 @@ const Routes = () => {
                 {
                     path: "/companys/add",
                     element: <AddCompany />
+                },
+                {
+                    path: "/modules",
+                    element: <ListModules />
+                },
+                {
+                    path: "/modules/:id",
+                    element: <ViewModules />
+                },
+                {
+                    path: "/modules/:id/edit",
+                    element: <EditModules />
+                },
+                {
+                    path: "/modules/add",
+                    element: <AddModules />
                 },
             ],
         },
